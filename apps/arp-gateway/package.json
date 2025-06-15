@@ -1,13 +1,14 @@
 {
   "name": "arp-gateway",
   "version": "1.0.0",
-  "description": "",
+  "description": "ARP Gateway reverse proxy service",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"no test specified\" && exit 0"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["ARP", "gateway", "proxy",
+  "networking"],
+  "author": "firaol",
   "license": "ISC",
   "packageManager": "pnpm@10.12.1"
 }
