@@ -8,9 +8,13 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function LanguageHelperPage() {
   const [prompt, setPrompt] = useState("");
   const [response, setResponse] = useState("");
+  const [loading, setload] = useState(false);
+  const [error , setError] = usestate("");
 
   async function handleSubmit() {
     setResponse("");
+    setError("");
+    setLoading(true);
 
     const res = await fetch("http://localhost:3001/api/context", {
       method: "POST",
